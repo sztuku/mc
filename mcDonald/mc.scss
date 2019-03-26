@@ -1,0 +1,246 @@
+.row.products
+{
+    
+        text-align: center;
+
+
+        img
+        {
+            width: 100%;
+        }
+
+
+
+        a
+        {
+            color:inherit;
+        }
+    
+
+
+}
+
+#back
+{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 4;
+}
+
+#pokazkoszyk
+{
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    z-index: 4;
+}
+
+#ANULUJ
+{
+    position: fixed;
+    bottom: 3%;
+    left: 3%;
+    z-index: 4;
+}
+
+.countbtn {
+    width: 33.3%;
+    padding-top: 5% !important;
+    padding-bottom: 6% !important;
+    position: relative;
+    bottom: 8px;
+      
+      padding: 2px;
+      box-sizing: border-box;
+      line-height: 63%;
+      text-align: center;    
+      font-size: 37px;
+      background: rgb(137, 137, 137);
+      color: rgb(65, 64, 64);
+      border: 3px solid rgb(70, 70, 70);
+      cursor: context-menu;
+      
+  
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+      
+    
+    a 
+    {
+        position: relative;
+        display: block;
+        bottom: 16px;
+      
+      
+    }
+}
+
+
+    .countbt {
+        width: 33.3%;
+        padding-top: 5% !important;
+        padding-bottom: 6% !important;
+        position: relative;
+        bottom: 8px;
+          
+          padding: 2px;
+          box-sizing: border-box;
+          line-height: 63%;
+          text-align: center;    
+          font-size: 50px;
+          font-weight: bold;
+          background: transparent;
+          color: rgb(65, 64, 64);
+          border: none;
+          cursor: context-menu;
+          
+      
+          -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+           -khtml-user-select: none; /* Konqueror HTML */
+             -moz-user-select: none; /* Firefox */
+              -ms-user-select: none; /* Internet Explorer/Edge */
+                  user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome and Opera */
+          
+        
+        a 
+        {
+            position: relative;
+            display: block;
+            bottom: 16px;
+          
+          
+        }
+
+
+    }
+  
+  
+  
+
+  .ilosc {
+    border: 0;
+    font-size: 21px;
+   // height: 45px;
+    font-weight: bold;
+    width: 33.3%;
+    padding: 2px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid lightslategrey;
+    cursor: context-menu;
+    position: relative;
+    bottom: 17px;
+    padding-bottom: 5%;
+  
+    
+  }  
+  #produktyform
+  {
+      input 
+      {
+          border: none;
+          background-color: transparent;
+      }
+  }
+
+  #zmienilosc
+  {
+    input
+    {
+        width: 14.3%;
+        text-align: center;
+        border: none;
+        background-color: transparent;
+    }
+
+  }
+  
+
+  #zmienilosc
+  {
+
+    button
+    {
+        float: left;
+        margin-left: 26%;
+        margin-right: 8%;
+    }
+  }
+
+  #delorder
+  {
+float: left;
+
+  }
+
+  #order
+  {
+          /* position: relative; */
+    // position: relative;
+    // bottom: 5%;
+    // left: 8%;
+    // z-index: 4;
+    // margin-bottom: 5%;
+    // margin-top: 5%;
+  }
+
+  #suma
+  {
+      position: absolute;
+      right: 10%;
+      margin-bottom: 30px;
+  }
+  .ilosc
+  {
+   background:  rgb(137, 137, 137);
+   color: rgb(65, 64, 64);
+   border:  3px solid rgb(70, 70, 70);
+  }
+
+  .odbior, .inprogres
+  {
+      li 
+          {
+          
+            list-style-type: none;
+          }
+      
+  }
+
+  .win
+  {
+    padding-top: 40vh ;
+
+        input
+        {
+            margin-bottom: 3vh;
+            width: 76%;
+            margin-left:12%
+        }
+        button 
+        {
+            width: 76%;
+            margin-left:12%
+        }
+
+  }
+
+  ul.odbior li {
+    font-size: 41px;
+    font-weight: bold;
+    color: #ffcf41;
+}
+
+ul.inprogres li {
+       font-size: 41px;
+    font-weight: bold;
+    color: #eaeaea;
+}
