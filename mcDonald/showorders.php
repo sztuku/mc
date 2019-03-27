@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="mc.css">
     <title>zamowienia </title>
   </head>
-  <body style="    background-color: #97986c;">
+  <body style="    background-color: #73da52;">
   <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -127,28 +127,41 @@ $odebranesql=mysqli_query($connection,'SELECT `id_zamowienia` FROM `orders` WHER
 function poll() {
    setTimeout(function() {
       
-       $.ajax({ url: "show.php", success: function(data) {
-        $(".odbior").html('<li>'+data+'</li>');
-       poll();
-       },  /*complete: poll*/ });
+       $.ajax({ url: "show.php",dataType:"json", success: function(data) {
+
        
-    }, 3000);
+         
+         
+            $(".odbior").html(data.odbior);
+         
+         
+            $(".inprogres").html(data.progres);
+       
+            
+            
+        
+
+        
+       poll();
+       },});
+       
+    }, 50);
 };
 poll();
 
 
-function poll1() {
-   setTimeout(function() {
-       $.ajax({ url: "robione.php", success: function(data) {
-        $(".inprogres").html('<li>'+data+'</li>');
-        poll1();
+// function poll1() {
+//    setTimeout(function() {
+//        $.ajax({ url: "robione.php", success: function(data) {
+//         $(".inprogres").html('<li>'+data+'</li>');
+//         poll1();
                      
-       }, /* complete: poll1 */});
+//        }, /* complete: poll1 */});
 
        
-    }, 3000);
-};
-poll1();
+//     }, 3000);
+// };
+// poll1();
 
 </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
