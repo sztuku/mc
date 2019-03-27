@@ -99,7 +99,7 @@ INSERT INTO `lista_zamowien` (`index`, `id_zamowienia`, `id_produktu`, `ilosc`) 
 CREATE TABLE `orders` (
   `id_zamowienia` int(11) NOT NULL,
   `data` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `status` tinyint(1) NOT NULL DEFAULT '0'
+  `status` tinyint(1) NOT NULL DEFAULT '3'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
