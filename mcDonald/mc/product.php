@@ -39,7 +39,7 @@ echo '
             {
                 mysqli_query($connection,'INSERT 
                 INTO `orders` 
-                SET  id_zamowienia=NULL, data=CURRENT_TIMESTAMP, status=FALSE  ');
+                SET  id_zamowienia=NULL, data=CURRENT_TIMESTAMP, status=3  ');
                 $_SESSION['id_zamowienia']=mysqli_insert_id($connection);
 
             }  

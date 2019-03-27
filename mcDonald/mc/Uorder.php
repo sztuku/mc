@@ -5,6 +5,8 @@
 
 if(isset($_GET['order']) && $_GET['order']==TRUE)
 {
+
+    mysqli_query($connection,'UPDATE `orders` SET `status`=0 WHERE `id_zamowienia`='.$_SESSION['id_zamowienia'].'');
     unset($_SESSION['suma']);
     unset($_SESSION['id_zamowienia']);
     header('location:index.php');
