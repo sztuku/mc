@@ -6,4 +6,4 @@ showorders.php - strona wyświetlająca liste zamówień w trkcie przygotowywani
 
 control.php - strona dla obsługi
 
-nazwa bazy danych - mcdonald
+nazwa bazy danych - mc
